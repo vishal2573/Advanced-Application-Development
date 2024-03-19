@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+body {
+  background-color: rgb(250, 250, 250);
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.landing-page {
+  display: flex;
+  min-height: 100vh;
+  z-index: 1; /* Lower z-index */
+}
+
+.central-message {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative; /* Add position relative */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.central-message::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/redrum2.png"); /* Replace 'path_to_your_image.jpg' with your actual image path */
+  background-size: cover;
+  background-position: center;
+}
+
+.main-message {
+  font-size: 5em;
+  margin-bottom: 0;
+  margin-top: 230px;
+}
+
+.bright-text {
+  color: #f7d632; /* Bright blue */
+}
+.container32 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.statistics-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.fill {
+  color: #1bbe0f;
+}
+.statpoint {
+  margin-top: 100px;
+}
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #f5dd61;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  color: #333;
+  color: #000000;
+  height: 350px;
+  width: 280px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.stat-box:nth-child(1):hover,
+.stat-box:nth-child(4):hover {
+  background-color: #d3be52;
+}
+.stat-box:nth-child(2),
+.stat-box:nth-child(5) {
+  background-color: #59d5e0;
+
+  margin-top: 50px;
+}
+.stat-box:nth-child(2):hover,
+.stat-box:nth-child(5):hover {
+  background-color: #45a2ab;
+}
+.stat-box:nth-child(5) {
+  margin-top: 10px;
+}
+.stat-box:nth-child(4),
+.stat-box:nth-child(6) {
+  margin-top: -40px;
+}
+.stat-box:nth-child(3),
+.stat-box:nth-child(6) {
+  background-color: #f4538a;
+}
+.stat-box:nth-child(3):hover,
+.stat-box:nth-child(6):hover {
+  background-color: #bb4069;
+}
+
+.stat-box h1 {
+  font-size: 3rem;
+  margin: 0;
+  transition: font-size 0.3s;
+}
+
+.stat-box:hover h1 {
+  font-size: 3.5rem;
+}
+
+.stat-box p {
+  color: #000000;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  transition: font-size 0.3s;
+}
+.stat-box:hover p {
+  font-size: 1.5rem;
+}
+
+.space-for-slow {
+  margin-bottom: 250px;
+}
+.sub-message {
+  font-weight: 300;
+
+  font-size: 1.5em;
+  margin-top: 40px;
+  margin-bottom: 250px;
+}
+.fade-in-out {
+  transition: opacity 0.5s ease-in-out;
+}
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: opacity 2.5s ease, transform 2.5s ease;
+}
+
+.animate-on-scroll.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.active {
+  opacity: 1;
+}
+
+.bright-text1 {
+  color: #f4538a; /* Bright pink */
+}
+.bright-text2 {
+  color: #59d5e0; /* Bright pink */
+}
+.left-column {
+  flex: 2;
+}
+
+.text-content {
+  padding: 45px; /* Adjust padding as needed */
+  margin-bottom: 50px; /* Adjust spacing between text modules */
+}
+
+.heading {
+  font-size: 4em;
+  margin-bottom: 16px;
+}
+.justify-text {
+  text-align: justify;
+}
+
+.subtext {
+  text-align: justify;
+
+  font-size: 2em;
+  color: #888;
+}
+
+.circle-frame {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: sticky;
+  margin-right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden; /* Ensure content is contained within the circular frame */
+}
+
+.module-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out; /* Add transition for opacity */
+  opacity: 0; /* Initially hide the images */
+}
+
+.module-image.active {
+  opacity: 1; /* Fade in when active class is applied */
+}

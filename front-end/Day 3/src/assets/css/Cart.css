@@ -1,0 +1,74 @@
+/* Cart.css */
+/* Add styles for the bill */
+.total-bill {
+  width: 80%; /* Adjust the width as desired */
+  margin: 20px auto; /* Center the bill section */
+  text-align: center; /* Center the text */
+  font-size: 1.2rem; /* Increase the font size */
+}
+/* Cart.css */
+.total-bill button {
+  display: block;
+  margin: 20px auto; /* Center the button */
+  margin-bottom: 260px;
+}
+
+.bill-items {
+  list-style: none;
+  padding: 0;
+}
+
+.bill-item-title {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-right: 10px;
+}
+
+.bill-item-price {
+  margin-left: 10px;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cart-content {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.cart-table th {
+  background-color: #f2f2f2;
+}
+
+.item-image img {
+  width: 50px;
+  height: auto;
+}
+/* Cart.css */
+/* Add styles for the increase and decrease buttons */
+.cart-table td .item-quantity button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
+}
+
+.cart-table td .item-quantity button:hover {
+  background-color: #f2f2f2;
+}
