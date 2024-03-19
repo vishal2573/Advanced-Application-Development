@@ -1,0 +1,61 @@
+:root {
+  --primary: #59d5e0;
+}
+
+body {
+  background-color: white;
+}
+.container-explore {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-explore {
+  margin-bottom: 2rem;
+}
+
+.category-explore-label {
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  margin-left: 10px;
+}
+
+/* Explore.css */
+.card {
+  width: 96%;
+  height: 96%;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.card-body {
+  padding: 1rem;
+  flex: 1;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-actions button {
+  margin-left: 0.5rem;
+}
+
+.card-image {
+  height: 285px; /* Set a fixed height for the image container */
+  overflow: hidden; /* Hide overflow if image exceeds the container */
+}
+
+.card-image img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
